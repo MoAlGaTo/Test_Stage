@@ -1,6 +1,6 @@
 <?php
 
-require_once('connection.php');
+require_once($_SERVER['DOCUMENT_ROOT']."/Test_Stage/Model/Database/connection.php");
 
 $db = pMyA_connection();
 
@@ -29,9 +29,10 @@ $table_drop = "DROP TABLE IF EXISTS products";
 $table = "CREATE TABLE IF NOT EXISTS products (
         id_product INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
         cart varchar(255) NOT NULL,
-        zone_asset varchar(255) NOT NULL,
-        type_asset varchar(255) NOT NULL,
-        quantity varchar(255) NOT NULL
+        zone_product varchar(255) NOT NULL,
+        type_product varchar(255) NOT NULL,
+        quantity INT NOT NULL,
+        sav varchar(255) NOT NULL
         )ENGINE=InnoDB";
 try 
 {
@@ -44,7 +45,7 @@ catch (PDOException $err)
     die();
 }
 
+require_once($_SERVER['DOCUMENT_ROOT']."/Test_Stage/Model/insert_csv_file.php");
 
 
-
-header('Location: http://localhost:8080/Test_Stage/index.php');
+header('Location: http://localhost:8080/Test_Stage/View/db_create_success.php');

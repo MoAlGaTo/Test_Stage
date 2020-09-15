@@ -4,7 +4,7 @@
 // A modifier avant l'execution du script
 $user = 'root';
 $password = 'mohamedali';
-//----------------------------------------
+/*----------------------------------------*/
 
 
 
@@ -47,5 +47,6 @@ function test_connection()
     }
     return $db;
 }
+
 
 ?>

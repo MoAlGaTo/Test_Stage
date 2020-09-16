@@ -19,7 +19,7 @@ $products = get_products();
 <body>
     <div class="nav-top">
         <div class="top-container">
-            <p class="s-dash">Tableau de bord</p>
+            <p class="s-dash">Dashboard</p>
             <div class="profil">
                 <img src="http://localhost:8080/Test_Stage/Public/Pictures/user.png">
                 <p>Guest2145</p>
@@ -30,8 +30,8 @@ $products = get_products();
         <ul>
             <li class="my-li logo"><img src="http://localhost:8080/Test_Stage/Public/Pictures/dashboard.png"></li>
             <hr class="my-hr">
-            <a href="localhost:8080/Test_Stage/index.php" class="link-dash"><li class="my-li my-li-selected"><img src="http://localhost:8080/Test_Stage/Public/Pictures/home_white.png">Accueil</li></a>
-            <a href="#"  class="link-dash"><li class="my-li">Statistiques</li></a>
+            <a href="http://localhost:8080/Test_Stage/index.php" class="link-dash"><li class="my-li my-li-selected"><img src="http://localhost:8080/Test_Stage/Public/Pictures/home_white.png">Accueil</li></a>
+            <a href="#"  class="link-dash"><li class="my-li"><img src="http://localhost:8080/Test_Stage/Public/Pictures/settings.png">Réglages</li></a>
         </ul>
     </nav>
     <div class="my-content">
@@ -117,4 +117,13 @@ $products = get_products();
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="http://localhost:8080/Test_Stage/Public/Javascript/board.js"></script>
+<script>
+    /*function deleteAppear(element) {
+        element.childNodes[13].children[0].style.display = 'initial';
+    }
+
+    function deleteDisappear(element) {
+        element.childNodes[13].children[0].style.display = 'none';
+    }*/
+</script>
 </html>

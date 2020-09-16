@@ -82,7 +82,29 @@ ul {
 }
 
 .my-content {
-    margin-left: 140px;
-    margin-top: 140px;
-    margin-right: 50px;
+    margin-left: 170px;
+    margin-top: 170px;
+    margin-right: 70px;
+}
+
+.dis-elem {
+    width: 230px;
+    height: 250px;
+    border: 1px solid rgb(231, 230, 230);
+    text-align:center;
+    background-color: whitesmoke;
+}
+
+.dis-elem:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); 
+}
+
+.link-board {
+    color: rgb(65, 61, 61);
+}
+.link-board:hover {
+    text-decoration: none;
+    color: rgb(65, 61, 61);
 }

@@ -10,7 +10,7 @@
 <body>
     <div class="nav-top">
         <div class="top-container">
-            <p class="s-dash">Tableau de bord</p>
+            <p class="s-dash">Dashboard</p>
             <div class="profil">
                 <img src="http://localhost:8080/Test_Stage/Public/Pictures/user.png">
                 <p>Guest2145</p>
@@ -22,13 +22,20 @@
             <li class="my-li logo"><img src="http://localhost:8080/Test_Stage/Public/Pictures/dashboard.png"></li>
             <hr class="my-hr">
             <a href="localhost:8080/Test_Stage/index.php" class="link-dash"><li class="my-li my-li-selected"><img src="http://localhost:8080/Test_Stage/Public/Pictures/home_white.png">Accueil</li></a>
-            <a href="#"  class="link-dash"><li class="my-li">Statistiques</li></a>
+            <a href="#"  class="link-dash"><li class="my-li"><img src="http://localhost:8080/Test_Stage/Public/Pictures/settings.png">Réglages</li></a>
         </ul>
     </nav>
-    <div class="my-content row">
-        <div class="col-md-4" style="width: 200px; height: 200px; border: 1px solid black;"><img src="http://localhost:8080/Test_Stage/Public/Pictures/blackboard.png" style="width: 200px; height: 200px"></div>
-        <div class="col-md-4" style=" width: 200px; height: 200px; border: 1px solid black;"></div>
-        <div class="col-md-4" style=" width: 200px; height: 200px; border: 1px solid black;"></div>
+    <div class="my-content" style="display:flex;">
+        <div class="dis-elem mr-5">
+        <a class="link-board" href="http://localhost:8080/Test_Stage/View/board.php"><p style="font-size: 15px;">Tableau des produits</p>
+        <hr style="margin-bottom:0">
+        <img src="http://localhost:8080/Test_Stage/Public/Pictures/blackboard.png" style="width: 200px; height: 200px"></a>
+        </div>
+        <div class="dis-elem mr-5">
+        <a class="link-board" href="http://localhost:8080/Test_Stage/View/graphic.php"><p style="font-size: 15px;">Statistiques</p>
+        <hr style="margin-bottom:0">
+        <img src="http://localhost:8080/Test_Stage/Public/Pictures/statistiques.png" style="width: 200px; height: 200px"></a>
+        </div>
     </div>
 </body>
 </html>

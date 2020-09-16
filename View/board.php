@@ -101,7 +101,7 @@ $products = get_products();
         <tbody id="tbody">
             <?php
                 foreach($products as $product) {?>
-                    <tr>
+                    <tr id="<?= $product[0] ?>">
                         <th scope="row"><?= $product[0] ?></th>
                         <td><?= $product[1] ?></td>
                         <td><?= $product[2] ?></td>
@@ -117,8 +117,4 @@ $products = get_products();
 
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="http://localhost:8080/Test_Stage/Public/Javascript/board.js"></script>
-<script>
-    console.log(document.getElementById('tbody').innerHTML)
-    document.getElementById('tbody').innerHTML = "";
-</script>
 </html>
